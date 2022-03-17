@@ -18,7 +18,9 @@ class MyHomePage extends StatefulWidget {
   _MyHomePageState createState() => _MyHomePageState();
 }
 Color selection = Colors.green;
-class _MyHomePageState extends State<MyHomePage> {
+
+class _MyHomePageState extends State<MyHomePage>{
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -152,7 +154,7 @@ class _MyHomePageState extends State<MyHomePage> {
             crossAxisCount: 2,
             crossAxisSpacing: 2,
             mainAxisSpacing: 4,
-            shrinkWrap: false,
+            shrinkWrap: true,
             children: [
               _buildCard('Yousef', 'Away','Jordan -Amman', 1),
               _buildCard('Anas', 'Available','Jordan -Amman', 2),
@@ -167,7 +169,6 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
     );
   }
-  //yousef
   Widget _buildCard(String name, String status ,String info, int cardIndex){
     return Card(
       shape: RoundedRectangleBorder(
