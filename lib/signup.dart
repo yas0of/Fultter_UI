@@ -18,7 +18,7 @@ class SignUp extends StatelessWidget {
           centerTitle: true,
           backgroundColor: Colors.white10,
         ),
-
+//
         body: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [

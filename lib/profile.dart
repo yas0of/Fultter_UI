@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mian/signin.dart';
 
 class Profile extends StatelessWidget {
   const Profile({Key? key}) : super(key: key);
@@ -70,7 +71,9 @@ class Profile extends StatelessWidget {
                     borderRadius: const BorderRadius.all(Radius.circular(30)),
                     shadowColor: Colors.grey,
                     child: GestureDetector(
-                      onTap: () {},
+                      onTap: () {
+                        Navigator.push(context, MaterialPageRoute(builder: (context) => const SignIn()));
+                      },
                       child: const Center(
                         child: Text(
                           'Log Out',

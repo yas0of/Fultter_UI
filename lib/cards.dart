@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mian/home.dart';
+import 'package:mian/profile.dart';
 import 'package:mian/signin.dart';
 
 class Cards extends StatelessWidget {
@@ -43,9 +44,9 @@ class MyCards extends StatelessWidget {
               color: Colors.white,
               onPressed: () {
                 Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => const SignIn()));
+                    MaterialPageRoute(builder: (context) => const Profile()));
               },
-              icon: const Icon(Icons.logout),
+              icon: const Icon(Icons.contacts_outlined),
             ),
           )
         ],
